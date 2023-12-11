@@ -1,0 +1,273 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+/*ul li{list-style: none;}*/
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+.wraper {
+  font-family: Arial;
+  color: white;
+  width: 100%;
+  background: url("../images/beckgr.JPG") 0 0 / cover no-repeat fixed;
+}
+.conteiner {
+  width: 100%;
+  background: rgba(21, 21, 21, 0.7) 0 0 / cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.about {
+  max-width: 1000px;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+.about__foto {
+  margin: 0 auto;
+}
+.title_foto {
+  display: block;
+  max-width: 150px;
+  margin: auto;
+  border-radius: 50px;
+}
+.about__part {
+  padding: 30px 0;
+}
+.about__name {
+  font-size: 3vw;
+  font-weight: 800;
+}
+.about_info {
+  padding-top: 10px;
+  font-size: 1.5vw;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.my__inst__title {
+  font-size: 2.2vw;
+  font-weight: 800;
+  padding: 24px 0;
+}
+
+[role="tablist"] {
+  display: grid;
+  max-width: 1000px;
+  margin: 0 auto;
+  grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+[role="tab"] {
+  font-size: 1.5vw;
+  font-weight: 800;
+  padding: 16px 0;
+  cursor: pointer;
+  background: transparent;
+  color: #ffff;
+}
+[aria-selected="true"] {
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(25px);
+}
+[role="tabpanel"] {
+  font-size: 1.5vw;
+  padding: 20px 0;
+  grid-column-start: span 3;
+  border-radius: 8px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(25px);
+}
+.tab_text {
+  font-size: 1.5vw;
+  padding: 0 10px;
+}
+.sesh_version {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.type__sesh {
+  display: block;
+  width: 300px;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+.type__sesh__head {
+  font-size: 2vw;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.sesh__list__items {
+  text-align: left;
+  padding: 10px;
+  font-size: 1.5vw;
+  line-height: 5px;
+}
+.version {
+  display: block;
+  width: 300px;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+.version__head {
+  font-size: 2vw;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.version__list__items {
+  list-style: none;
+  padding: 10px;
+  font-size: 1.5vw;
+  line-height: 5px;
+}
+.mision_swiper {
+  display: flex;
+  justify-content: space-around;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.my__mision {
+  width: 50%;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+.my__mision__head {
+  font-size: 2vw;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.mision__text {
+  display: block;
+  text-align: left;
+  padding: 10px;
+  font-size: 1.5vw;
+  line-height: 20px;
+  text-indent: 20px;
+}
+.swiper {
+  width: 50%;
+  height: 20%;
+  display: block;
+  margin: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+}
+.swiper_image {
+  text-align: center;
+}
+.swiper_image img {
+  max-height: 300px;
+  border-radius: 20px;
+}
+.swiper-pagination {
+  opacity: 0;
+}
+.footer {
+  min-width: 80%;
+  padding: 30px 0;
+  margin: 0 auto;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(25px);
+}
+.footer_logo {
+  max-width: 40px;
+}
+.footer_text {
+  font-size: 1.5vw;
+  margin: 10px;
+}
